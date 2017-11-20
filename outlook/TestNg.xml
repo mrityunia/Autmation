@@ -1,0 +1,14 @@
+<suite name="outllok">
+<parameter name="browsername" value="chrome"/>
+<parameter name="url" value="https://outlook.live.com/"/>
+<test name="login">
+<classes>
+<class name="outlook.OpenOutlook"/>
+<methods>
+<parameter name="username" value="mchowdhury891@outlook.com"/>
+<parameter name="passwrod" value="kolkata@1992"/>
+<include  name="TC_01"/>
+</methods>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [outllok]">
+  <parameter name="passwrod" value="kolkata@1992"/>
+  <parameter name="browsername" value="chrome"/>
+  <parameter name="url" value="https://outlook.live.com/"/>
+  <parameter name="username" value="mchowdhury891@outlook.com"/>
+  <test name="login(failed)">
+    <parameter name="passwrod" value="kolkata@1992"/>
+    <parameter name="username" value="mchowdhury891@outlook.com"/>
+    <classes>
+      <class name="outlook.OpenOutlook">
+        <methods>
+          <include name="TC_01"/>
+          <include name="intilizeDriver"/>
+        </methods>
+      </class> <!-- outlook.OpenOutlook -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [outllok] -->

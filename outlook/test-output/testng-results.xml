@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="outllok" duration-ms="56764" started-at="2017-11-19T19:03:22Z" finished-at="2017-11-19T19:04:19Z">
+    <groups>
+    </groups>
+    <test name="login" duration-ms="56764" started-at="2017-11-19T19:03:22Z" finished-at="2017-11-19T19:04:19Z">
+      <class name="outlook.OpenOutlook">
+        <test-method status="PASS" signature="intilizeDriver(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@482f8f11]" name="intilizeDriver" is-config="true" duration-ms="3382" started-at="2017-11-20T00:33:22Z" finished-at="2017-11-20T00:33:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://outlook.live.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intilizeDriver -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@482f8f11]" name="TC_01" duration-ms="51270" started-at="2017-11-20T00:33:25Z" finished-at="2017-11-20T00:34:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mchowdhury891@outlook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kolkata@1992]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:outlook.OpenOutlook@482f8f11]" name="quiteDriver" is-config="true" duration-ms="2094" started-at="2017-11-20T00:34:16Z" finished-at="2017-11-20T00:34:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteDriver -->
+      </class> <!-- outlook.OpenOutlook -->
+    </test> <!-- login -->
+  </suite> <!-- outllok -->
+</testng-results>
