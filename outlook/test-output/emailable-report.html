@@ -31,20 +31,29 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">login</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">56.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">login</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">59.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">login &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">outlook.OpenOutlook</td><td><a href="#m1"><b>TC_01</b>  </a></td><td class="numi">1</td><td>1511118205635</td><td class="numi">51270</td></tr>
+<tr><th colspan="4">login &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">outlook.OpenOutlook</td><td><a href="#m1"><b>TC_01</b>  </a></td><td class="numi">1</td><td>1511202945723</td><td class="numi">46109</td></tr>
 </table>
 <h1>login</h1>
 <h2 id="m1">outlook.OpenOutlook:TC_01</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>mchowdhury891@outlook.com</td>
-<td>kolkata@1992</td>
+<tr class="param stripe"><td></td>
+<td></td>
 </tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at outlook.OpenOutlook.TC_01(OpenOutlook.java:59)
+<br/>25 lines not shown
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

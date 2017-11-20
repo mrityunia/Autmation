@@ -14,8 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.utility.Report;
-
-import sProperty.SConfiguration;
+import com.utility.SConfiguration;
 
 public class StartDriver {
 

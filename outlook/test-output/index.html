@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-outllok">
-              <span class="suite-name border-passed">outllok</span>
+              <span class="suite-name border-failed">outllok</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-outllok">
-                    <span>F:\selenium\AutomationWorkspeace\outlook\TestNg.xml</span>
+                    <span>F:\selenium\GitHub\Autmation\outlook\TestNg.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-outllok" class="hide-methods passed suite-outllok"> (hide)</a> <!-- hide-methods passed suite-outllok -->
-                      <a href="#" panel-name="suite-outllok" class="show-methods passed suite-outllok"> (show)</a> <!-- show-methods passed suite-outllok -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-outllok" class="hide-methods failed suite-outllok"> (hide)</a> <!-- hide-methods failed suite-outllok -->
+                      <a href="#" panel-name="suite-outllok" class="show-methods failed suite-outllok"> (show)</a> <!-- show-methods failed suite-outllok -->
                     </span>
-                    <div class="method-list-content passed suite-outllok">
+                    <div class="method-list-content failed suite-outllok">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-outllok" title="outlook.OpenOutlook" hash-for-method="TC_01(mchowdhury891@outlook.com, kolkata@1992)">TC_01(mchowdhury891@outlook.com, kolkata@1992)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-outllok" title="outlook.OpenOutlook" hash-for-method="TC_01(, )">TC_01(, )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-outllok -->
+                    </div> <!-- method-list-content failed suite-outllok -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,26 +116,60 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-outllok" class="panel outllok">
-          <div class="suite-outllok-class-passed">
+          <div class="suite-outllok-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">outlook.OpenOutlook</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_01(mchowdhury891@outlook.com, kolkata@1992)">
-                  </a> <!-- TC_01(mchowdhury891@outlook.com, kolkata@1992) -->
+                  <a name="TC_01(, )">
+                  </a> <!-- TC_01(, ) -->
                   <span class="method-name">TC_01</span>
-                  <span class="parameters">(mchowdhury891@outlook.com, kolkata@1992)</span>
+                  <span class="parameters">(, )</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
+	at outlook.OpenOutlook.TC_01(OpenOutlook.java:59)
+... Removed 28 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at outlook.OpenOutlook.TC_01(OpenOutlook.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>outlook.OpenOutlook.TC_01(OpenOutlook.java:59)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)<br>
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-outllok-class-passed -->
+          </div> <!-- suite-outllok-class-failed -->
         </div> <!-- panel outllok -->
         <div panel-name="test-xml-outllok" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\selenium\AutomationWorkspeace\outlook\TestNg.xml</span>
+            <span class="header-content">F:\selenium\GitHub\Autmation\outlook\TestNg.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,8 +179,8 @@
   &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://outlook.live.com/&quot;/&gt;
   &lt;test name=&quot;login&quot;&gt;
-    &lt;parameter name=&quot;passwrod&quot; value=&quot;kolkata@1992&quot;/&gt;
-    &lt;parameter name=&quot;username&quot; value=&quot;mchowdhury891@outlook.com&quot;/&gt;
+    &lt;parameter name=&quot;passwrod&quot; value=&quot;&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;outlook.OpenOutlook&quot;&gt;
         &lt;methods&gt;
@@ -196,12 +230,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_01')
 data.setCell(0, 2, 'outlook.OpenOutlook')
-data.setCell(0, 3, 51270);
+data.setCell(0, 3, 46109);
 window.suiteTableData['outllok']= { tableData: data, tableDiv: 'times-div-outllok'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-outllok">
               </div> <!-- times-div-outllok -->
             </div> <!-- times-div -->
@@ -233,12 +267,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">TC_01(mchowdhury891@outlook.com, kolkata@1992)</span>
-                <span class="method-start">3385 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_01(, )</span>
+                <span class="method-start">12846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quiteDriver</span>
-                <span class="method-start">54656 ms</span>
+                <span class="method-start">58968 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
