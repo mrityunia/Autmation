@@ -5,8 +5,8 @@
 <classes>
 <class name="outlook.OpenOutlook"/>
 <methods>
-<parameter name="username" value="mchowdhury891@outllok.com"/>
-<parameter name="passwrod" value="kolkata@1234"/>
+<parameter name="username" value=""/>
+<parameter name="passwrod" value=""/>
 <include  name="TC_01"/>
 </methods>
 </classes>
