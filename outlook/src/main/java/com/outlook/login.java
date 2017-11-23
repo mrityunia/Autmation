@@ -16,11 +16,13 @@ public class login extends Base{
 	public void openStratingPage(String TestCaseName){
 		webDriver.get(url);	
 		try {
+			//allWebelemtsLinks();
+			allWebelemtsInPage();
 			Thread.sleep(2000);		
 			addsc(Opnepage.getProperty("Click_oSign"));
 			
 			clickObject(Opnepage.getProperty("Click_oSign"));
-			
+			//allWebelemtsInPage();
 			
 			
 		} catch (Exception e) {

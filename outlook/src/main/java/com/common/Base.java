@@ -4,12 +4,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
@@ -182,5 +185,39 @@ public void addsc(String Xpath){
 	
 
 }
+public void allWebelemtsInPage(){
+	List<WebElement> allelements = webDriver.findElements(By.xpath("//*"));
+	
+System.out.println(allelements.get(0).getText());
+
+webDriver.findElement(By.linkText(allelements.get(0).getText())).click();;
+	
+	
+	
+	int size = allelements.size();
+	
+	for (int a= 0;a<=size;a++){
+		
+		System.out.println(allelements.get(a).getText());
+	}}
+	
+	public void allWebelemtsLinks(){
+		List<WebElement> allelements = webDriver.findElements(By.tagName("a"));
+		int size = allelements.size();
+		
+		for (int a= 0;a<=size;a++){
+			System.out.println(allelements.get(a).getText());
+		}
+		
+	}
+public void overMouse(String Xpath){
+	Actions action = new Actions(webDriver);
+	webelement=getObejct(Xpath);
+	action.moveToElement(webelement).build().perform();
+	
+}
+
+
+
 
 } 

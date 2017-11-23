@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="outllok" duration-ms="59403" started-at="2017-11-20T18:35:32Z" finished-at="2017-11-20T18:36:32Z">
+  <suite name="outllok" duration-ms="65469" started-at="2017-11-23T20:17:39Z" finished-at="2017-11-23T20:18:44Z">
     <groups>
     </groups>
-    <test name="login" duration-ms="59403" started-at="2017-11-20T18:35:32Z" finished-at="2017-11-20T18:36:32Z">
+    <test name="login" duration-ms="65469" started-at="2017-11-23T20:17:39Z" finished-at="2017-11-23T20:18:44Z">
       <class name="outlook.OpenOutlook">
-        <test-method status="PASS" signature="intilizeDriver(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@482f8f11]" name="intilizeDriver" is-config="true" duration-ms="12842" started-at="2017-11-21T00:05:32Z" finished-at="2017-11-21T00:05:45Z">
+        <test-method status="PASS" signature="intilizeDriver(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@34b7ac2f]" name="intilizeDriver" is-config="true" duration-ms="3795" started-at="2017-11-24T01:47:39Z" finished-at="2017-11-24T01:47:42Z">
           <params>
             <param index="0">
               <value>
@@ -23,16 +23,16 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilizeDriver -->
-        <test-method status="FAIL" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@482f8f11]" name="TC_01" duration-ms="46109" started-at="2017-11-21T00:05:45Z" finished-at="2017-11-21T00:06:31Z">
+        <test-method status="FAIL" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@34b7ac2f]" name="TC_01" duration-ms="61438" started-at="2017-11-24T01:47:42Z" finished-at="2017-11-24T01:48:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[]]>
+                <![CDATA[mchowdhury891@outllok.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[kolkata@1234]]>
               </value>
             </param>
           </params>
@@ -46,7 +46,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at outlook.OpenOutlook.TC_01(OpenOutlook.java:59)
+	at outlook.OpenOutlook.TC_01(OpenOutlook.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:outlook.OpenOutlook@482f8f11]" name="quiteDriver" is-config="true" duration-ms="412" started-at="2017-11-21T00:06:31Z" finished-at="2017-11-21T00:06:32Z">
+        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:outlook.OpenOutlook@34b7ac2f]" name="quiteDriver" is-config="true" duration-ms="209" started-at="2017-11-24T01:48:44Z" finished-at="2017-11-24T01:48:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteDriver -->
