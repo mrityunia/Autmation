@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="outllok" duration-ms="65469" started-at="2017-11-23T20:17:39Z" finished-at="2017-11-23T20:18:44Z">
+  <suite name="outllok" duration-ms="27407" started-at="2017-12-18T19:49:11Z" finished-at="2017-12-18T19:49:39Z">
     <groups>
     </groups>
-    <test name="login" duration-ms="65469" started-at="2017-11-23T20:17:39Z" finished-at="2017-11-23T20:18:44Z">
-      <class name="outlook.OpenOutlook">
-        <test-method status="PASS" signature="intilizeDriver(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@34b7ac2f]" name="intilizeDriver" is-config="true" duration-ms="3795" started-at="2017-11-24T01:47:39Z" finished-at="2017-11-24T01:47:42Z">
+    <test name="login" duration-ms="27407" started-at="2017-12-18T19:49:11Z" finished-at="2017-12-18T19:49:39Z">
+      <class name="test.flipkart.startingPage">
+        <test-method status="PASS" signature="intilizeDriver(java.lang.String, java.lang.String)[pri:0, instance:test.flipkart.startingPage@cb5822]" name="intilizeDriver" is-config="true" duration-ms="5224" started-at="2017-12-19T01:19:11Z" finished-at="2017-12-19T01:19:17Z">
           <params>
             <param index="0">
               <value>
@@ -16,37 +16,23 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://outlook.live.com/]]>
+                <![CDATA[https://www.flipkart.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intilizeDriver -->
-        <test-method status="FAIL" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:outlook.OpenOutlook@34b7ac2f]" name="TC_01" duration-ms="61438" started-at="2017-11-24T01:47:42Z" finished-at="2017-11-24T01:48:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mchowdhury891@outllok.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kolkata@1234]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
+        <test-method status="FAIL" signature="TC_009()[pri:0, instance:test.flipkart.startingPage@cb5822]" name="TC_009" duration-ms="19681" started-at="2017-12-19T01:19:17Z" finished-at="2017-12-19T01:19:36Z">
+          <exception class="java.lang.reflect.InvocationTargetException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at outlook.OpenOutlook.TC_01(OpenOutlook.java:46)
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at test.flipkart.startingPage.execute_Actions(startingPage.java:63)
+	at test.flipkart.startingPage.TC_009(startingPage.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -68,20 +54,41 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: Element <a class="_2k0gmP" href="/account/orders" data-reactid="19">...</a> is not clickable at point (1097, 14). Other element would receive the click: <div data-reactroot="" class="_2ISNhP _3AOFWO" tabindex="-1">...</div>
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 75 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-7IQQM56', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\MRITYU~1\AppData\Local\Temp\scoped_dir1028_18368}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.84, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 78f76069402e7bd63acf63aaece420b3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.common.Base.getsourcCode(Base.java:250)
+	at flipkart.Common.OpenHomepage(Common.java:23)
+	... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:outlook.OpenOutlook@34b7ac2f]" name="quiteDriver" is-config="true" duration-ms="209" started-at="2017-11-24T01:48:44Z" finished-at="2017-11-24T01:48:44Z">
+        </test-method> <!-- TC_009 -->
+        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:test.flipkart.startingPage@cb5822]" name="quiteDriver" is-config="true" duration-ms="2471" started-at="2017-12-19T01:19:36Z" finished-at="2017-12-19T01:19:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteDriver -->
-      </class> <!-- outlook.OpenOutlook -->
+      </class> <!-- test.flipkart.startingPage -->
     </test> <!-- login -->
   </suite> <!-- outllok -->
 </testng-results>

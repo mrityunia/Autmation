@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [outllok]">
-  <parameter name="passwrod" value="kolkata@1234"/>
   <parameter name="browsername" value="chrome"/>
-  <parameter name="url" value="https://outlook.live.com/"/>
-  <parameter name="username" value="mchowdhury891@outllok.com"/>
+  <parameter name="url" value="https://www.flipkart.com/"/>
   <test name="login(failed)">
-    <parameter name="passwrod" value="kolkata@1234"/>
-    <parameter name="username" value="mchowdhury891@outllok.com"/>
     <classes>
-      <class name="outlook.OpenOutlook">
+      <class name="test.flipkart.startingPage">
         <methods>
-          <include name="TC_01" invocation-numbers="0"/>
+          <include name="TC_009"/>
           <include name="intilizeDriver"/>
           <include name="quiteDriver"/>
         </methods>
-      </class> <!-- outlook.OpenOutlook -->
+      </class> <!-- test.flipkart.startingPage -->
     </classes>
   </test> <!-- login(failed) -->
 </suite> <!-- Failed suite [outllok] -->

@@ -17,10 +17,9 @@ public static String IE_browser=null;
 public static String FF_browser=null;
 public static String Chrome_browser=null;
 public static String reportLocation=null;
+public static String testCaesSheet=null;
 
 public static Logger log= Logger.getLogger(SConfiguration.class);
-
-
 
 public  static void intilize(){
 	prop = new Properties();
@@ -33,7 +32,7 @@ public  static void intilize(){
 		
 		IE_browser=prop.getProperty("iE_Driver");
 		FF_browser=prop.getProperty("fireFox");
-		
+		testCaesSheet=prop.getProperty("testCaseSheet");
 		reportLocation=prop.getProperty("report_location");
 		
 	File f = new File(prop.getProperty("log4j.appender.HTML.File"));
@@ -58,7 +57,7 @@ public  static void intilize(){
 	
 	
 }
+ 
 
-	
 	
 }

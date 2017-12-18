@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
@@ -21,6 +22,7 @@ public class StartDriver {
 	
 	protected static Properties config;	
 	protected static  Report r;
+	protected static Logger log; 
 	
 	protected String URL=null;
 	protected WebDriver webDriver;
@@ -32,22 +34,11 @@ public class StartDriver {
 		return URL;
 	}
 	
+	
 	public static void initilize(){
+		
 		r=new Report();
 		r.createReport(SConfiguration.reportLocation);
-		try {
-			config = new Properties();
-	
-			config.load(new FileInputStream(System.getProperty("user.dir").concat("/config/local.properties")));
-		
-		
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	@BeforeClass
@@ -58,7 +49,6 @@ public class StartDriver {
 	
 	public WebDriver intilizeDriver(String browsername,String url){
 		SConfiguration.intilize();
-		
 		factory= new DriverFactory();
 		
 		webDriver= factory.getDriver(browsername);
