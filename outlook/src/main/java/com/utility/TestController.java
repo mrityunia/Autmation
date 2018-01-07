@@ -6,7 +6,7 @@ import java.util.List;
 
 public class TestController {
 	public static Method method[];
-	private static List<TestCases> testCases;
+	private static  List<TestCases> testCases;
 	
 	
 	public static void execute_Action(Object cl ,String KeyWord,String data) {
@@ -57,6 +57,7 @@ public static int testExecuter(Object cl,TestSuits suits) {
 	int testCaseCount=0;
 	
 	try {
+		 //List<TestCases> testCases;
 		testCases = new ArrayList<TestCases>();
 		
 		  for (int i =0;i<suits.getTestcases().size();i++){
@@ -73,6 +74,14 @@ public static int testExecuter(Object cl,TestSuits suits) {
 		    StepsDetails std= new StepsDetails();
 		    List <String> pr= new ArrayList<String>();
 		    List  <String> M= new ArrayList<String>();
+		    for(int i=0;i<=testCaseCount;i++){	
+		    	
+		    	
+		    	tc=testCases.get(i);
+		    	
+		    	System.out.println("***********************************/n");
+		    	System.out.println("Start Test cases name"+tc.getTestDescription());
+		    	System.out.println("Start Test cases name"+tc.getTestCase());
 		    
 	    	for(int j=0;j<tc.getTestSteps().size();j++){
 	    		if(tc.getTestSteps().get(j)==null){
@@ -132,7 +141,7 @@ public static int testExecuter(Object cl,TestSuits suits) {
 	    	System.out.println("***********************************");
 	    
 		
-	}
+	}}
 	
 	catch(Exception e) {
 		System.out.println("error occured in "+cl.getClass()+""+e.getMessage());
