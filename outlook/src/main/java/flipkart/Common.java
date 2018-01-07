@@ -11,22 +11,32 @@ public class Common extends Base {
 	public Common(WebDriver webDriver, String url) {
 		super(webDriver, url);
 	}
-	public void OpenHomepage(){
-		
-	    try {
-	    	webDriver.get(url);
-			Thread.sleep(2000);
-			List<WebElement> list=getAllref();
 
-			for (int a =0;a<=list.size();a++){
-				
-				getsourcCode(list.get(5).getText());
-			}
-			
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-		
-		} 
+	    
+	    public void OpenHomepage(String D){
+	    
+
+	        try {
+	        	webDriver.get(url);
+	      
+	        	Thread.sleep(2000);
+	    		List<WebElement> list=getAllref();
+	  
+	    	} catch (InterruptedException e) {
+	    		// TODO Auto-generated catch block
+	    	
+	    	}  
+	    }
+	    
+	    
 	
 
-}}
+
+	public void click(String linkText) throws InterruptedException{
+		Thread.sleep(5000);
+		clickObject(linkText);	}
+	
+	public void enter(String linkText,String data){
+		insertString(linkText,data);
+	}
+}
