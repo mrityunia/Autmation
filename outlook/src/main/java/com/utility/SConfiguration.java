@@ -18,7 +18,9 @@ public static String FF_browser=null;
 public static String Chrome_browser=null;
 public static String reportLocation=null;
 public static String testCaesSheet=null;
+public static String ScreenShots=null;
 
+public static String logerLocation=null;
 public static Logger log= Logger.getLogger(SConfiguration.class);
 
 public  static void intilize(){
@@ -29,11 +31,13 @@ public  static void intilize(){
 		prop.load(new FileInputStream(System.getProperty("user.dir").concat("/config/configuration.properties")));
 		
 		Chrome_browser=prop.getProperty("chrome_driver");
-		
 		IE_browser=prop.getProperty("iE_Driver");
 		FF_browser=prop.getProperty("fireFox");
 		testCaesSheet=prop.getProperty("testCaseSheet");
 		reportLocation=prop.getProperty("report_location");
+		ScreenShots=prop.getProperty("ScreenShotsStorageLocation");
+		logerLocation=prop.getProperty("log4j.appender.HTML.File");
+		
 		
 	File f = new File(prop.getProperty("log4j.appender.HTML.File"));
 		

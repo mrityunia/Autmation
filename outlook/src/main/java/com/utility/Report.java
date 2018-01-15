@@ -87,11 +87,14 @@ public class Report {
 		report.flush();
 		
 	}
-	public String saveSreentShots(Properties config,String TestcaseName,File SaveFile) throws IOException{
-		String storageLocation = config.getProperty("ScreenShotsStorageLocation");
+	public String saveSreentShots(String TestcaseName,File SaveFile) throws IOException{
+		
+		String storageLocation = SConfiguration.ScreenShots;
+		
+		//String storageLocation = config.getProperty("ScreenShotsStorageLocation");
 		String scName ="\\"+TestcaseName.concat(".png");
 		String location =storageLocation.concat(scName);
-		config.setProperty("ScreenShotsLocation", location);
+	//	config.setProperty("ScreenShotsLocation", location);
 		  File destination =new  File(location);
 		  FileUtils.copyFile(SaveFile, destination);
 		  return location;

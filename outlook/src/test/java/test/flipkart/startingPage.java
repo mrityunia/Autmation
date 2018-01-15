@@ -31,9 +31,11 @@ public class startingPage extends StartDriver {
 		// method=cm.getClass().getMethods();
 		 suits= new TestSuits();
 			suits=cm.readfromExcel(TestcaseShet);
-			int tc= TestController.testExecuter(cm, suits);
-			    System.out.println("Total Test cses count in tester class is "+tc);
-
+			
+			TestController tc= new TestController();
+			int tcs= tc.testExecuter(cm, suits,super.webDriver);
+			
+			    System.out.println("Total Test cses count in tester class is "+tcs);
 		
 	}
 	

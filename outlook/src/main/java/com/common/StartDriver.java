@@ -2,8 +2,9 @@ package com.common;
 
 
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -21,7 +22,7 @@ public class StartDriver {
 
 	
 	protected static Properties config;	
-	protected static  Report r;
+	public static  Report r;
 	protected static Logger log; 
 	
 	protected String URL=null;
@@ -58,9 +59,20 @@ public class StartDriver {
 	}
 	
 	@AfterClass
-public void quiteDriver(){
-		webDriver.close();
+public void quiteDriver() throws IOException{
 		
+		r.flash(r.getReport());
+		String ReLocation=SConfiguration.reportLocation;
+		File htmlFile = new File(ReLocation);		
+		Desktop.getDesktop().browse(htmlFile.toURI());	
+		
+		String StLocation=SConfiguration.logerLocation;
+		File htmlFile2 = new File(StLocation);		
+		Desktop.getDesktop().browse(htmlFile2.toURI());
+		
+		
+		
+		webDriver.close();
 	}
 
 }
