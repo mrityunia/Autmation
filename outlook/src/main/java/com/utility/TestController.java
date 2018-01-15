@@ -208,6 +208,7 @@ public int testExecuter(Object cl,TestSuits suits,WebDriver webDrive) {
 	
 	catch(Exception e) {
 		System.out.println("error occured in "+cl.getClass()+""+e.getMessage());
+		  SConfiguration.log.error("error is "+cl.getClass()+""+e.getMessage());
 		
 	}
 	
